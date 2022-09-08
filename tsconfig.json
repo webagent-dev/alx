@@ -1,4 +1,4 @@
-{
+ {
     "compilerOption": {
         "target": "ES5",
         "module": "ESNext",
@@ -16,5 +16,5 @@
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
     },
-    "include": ["src/**/*"]
+       "include": ["src/**/*"]
 }
