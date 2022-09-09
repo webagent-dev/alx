@@ -11,14 +11,21 @@
     "react-dom": "^18.2.0",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.3.0",
+    "react-scroll-horizontal": "^1.6.6",
     "styled-components": "^5.3.5"
   },
+  "keywords": [
+    "React",
+    "TypeScript",
+    "Webpack 5",
+    "Starter Template",
+    "Boilerplate"
+  ],
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "lint": "eslint --fix \"./src/**/*.{js,jsx.ts,tsx,json}\"",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts.tsx,json,css,md}\""
-
   },
   "devDependencies": {
     "@babel/core": "^7.19.0",
@@ -37,6 +44,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
@@ -48,14 +56,30 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "4",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react-refresh": "^0.14.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.1",
     "typescript": "^4.8.2",
     "webpack": "^5.74.0",
+    "webpack-bundle-analyzer": "^4.6.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.0",
     "webpack-merge": "^5.8.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "eslint --fix"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }
