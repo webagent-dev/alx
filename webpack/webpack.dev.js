@@ -5,7 +5,7 @@ module.exports = {
         hot: true,
         open: true
     },
-    devtools: 'cheap-module-source-map',
+    devtool: 'cheap-module-source-map',
     plugins:[
         new ReactRefreshWebpackPlugin()
     ]
