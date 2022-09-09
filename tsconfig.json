@@ -1,4 +1,13 @@
  {
+     "compilerOptions": {
+         "jsx": "react"
+     },
+     "compilerOptions": {
+         "jsx": "react"
+     },
+     "compilerOptions": {
+         "jsx": "react"
+     },
     "compilerOption": {
         "target": "ES5",
         "module": "ESNext",
