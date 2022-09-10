@@ -6,7 +6,7 @@ import { default as Intro } from "./pages/Intro"
 import { default as Modalitie } from "./pages/Modalitie"
 import { default as Thanks } from "./pages/Thanks"
 
-export = {
+export {
   Home,
   Intro,
   Approach,
