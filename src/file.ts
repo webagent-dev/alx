@@ -5,6 +5,7 @@ import { default as Curriculum } from "./pages/Curriculum"
 import { default as Intro } from "./pages/Intro"
 import { default as Modalitie } from "./pages/Modalitie"
 import { default as Thanks } from "./pages/Thanks"
+import { default as HomePage } from "./comps/home/HomePage"
 
 export {
   Home,
@@ -14,4 +15,5 @@ export {
   Modalitie,
   Thanks,
   Comm,
+  HomePage,
 }

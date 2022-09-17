@@ -1,12 +1,22 @@
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
-module.exports = {
-    mode: 'development',
-    devServer: {
+module.exports =
+  {
+    mode: "development",
+    devServer:
+      {
+        port: 3000,
+        static:
+          [
+            "./public",
+          ],
+        open: true,
         hot: true,
-        open: true
-    },
-    devtool: 'cheap-module-source-map',
-    plugins:[
-        new ReactRefreshWebpackPlugin()
-    ]
-}
+        liveReload: true,
+      },
+    devtool:
+      "cheap-module-source-map",
+    plugins:
+      [
+        new ReactRefreshWebpackPlugin(),
+      ],
+  }

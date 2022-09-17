@@ -2,6 +2,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const { sources } = require('webpack')
+const {
+  CleanWebpackPlugin,
+} = require("clean-webpack-plugin")
 
    module.exports =
      {
@@ -62,6 +65,8 @@ const { sources } = require('webpack')
            ),
            filename:
              "bundle.js",
+           assetModuleFilename:
+             "public/[hash][ext][query]",
          },
        plugins:
          [
@@ -75,6 +80,7 @@ const { sources } = require('webpack')
                  ),
              }
            ),
+           new CleanWebpackPlugin(),
            new CopyPlugin(
              {
                patterns:

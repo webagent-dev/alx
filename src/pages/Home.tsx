@@ -1,11 +1,10 @@
 import React from "react"
 import { HomeContainer } from "../globalStyle"
+import { HomePage } from "../file"
 function Home() {
   return (
     <HomeContainer>
-      <h1>
-        Home
-      </h1>
+      <HomePage />
     </HomeContainer>
   )
 }
