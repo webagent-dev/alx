@@ -1,11 +1,10 @@
 import React from "react"
 import { IntroContainer } from "../globalStyle"
+import { IntroPage } from "../file"
 function Intro() {
   return (
     <IntroContainer>
-      <h1>
-        Intro
-      </h1>
+      <IntroPage />
     </IntroContainer>
   )
 }

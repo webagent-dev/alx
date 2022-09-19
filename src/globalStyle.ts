@@ -17,7 +17,7 @@ export const Container = styled.div`
 `
 export const HomeContainer = styled.div`
   width: 100vw;
-  height: 100%;
+  height: 100vh;
 `
 export const ApproachContainer = styled.div`
   width: 100%;
@@ -35,9 +35,9 @@ export const CurriculumContainer = styled.div`
   background: purple;
 `
 export const IntroContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  background: blue;
+  width: 100vw;
+  height: 100vh;
+  background: whitesmoke;
 `
 export const ModalitieContainer = styled.div`
   width: 100%;
