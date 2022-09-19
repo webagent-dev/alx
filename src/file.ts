@@ -6,7 +6,7 @@ import { default as Intro } from "./pages/Intro"
 import { default as Modalitie } from "./pages/Modalitie"
 import { default as Thanks } from "./pages/Thanks"
 import { default as HomePage } from "./comps/home/HomePage"
-
+import logoText from "./asset/logo-text.png"
 export {
   Home,
   Intro,
@@ -16,4 +16,5 @@ export {
   Thanks,
   Comm,
   HomePage,
+  logoText,
 }

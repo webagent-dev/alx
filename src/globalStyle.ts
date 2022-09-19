@@ -13,12 +13,11 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;f
+  height: 100%;
 `
 export const HomeContainer = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  background: skyblue;
 `
 export const ApproachContainer = styled.div`
   width: 100%;

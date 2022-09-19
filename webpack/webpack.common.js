@@ -1,6 +1,5 @@
    const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
 const { sources } = require('webpack')
 const {
   CleanWebpackPlugin,
@@ -38,6 +37,10 @@ const {
                        "babel-loader",
                    },
                  ],
+               },
+               {
+                test:/\.(html)$/,
+                use:['html-loader']
                },
                {
                  test: /\.css$/,
@@ -81,25 +84,6 @@ const {
              }
            ),
            new CleanWebpackPlugin(),
-           new CopyPlugin(
-             {
-               patterns:
-                 [
-                   {
-                     from: "**/*",
-                     to: "relative/path/to/dest/",
-                   },
-                   {
-                     from: "**/*",
-                     to: "/absolute/path/to/dest/",
-                   },
-                   {
-                     from: "**/*",
-                     to: "[path][name].[contenthash][ext]",
-                   },
-                 ],
-             }
-           ),
          ],
      }
    

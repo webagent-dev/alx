@@ -7,7 +7,9 @@ import {
   Small,
   Underline,
   Other,
+  Img,
 } from "./homepage.style"
+import { logoText } from "../../file"
 function HomePage() {
   return (
     <HomepageContainer>
@@ -37,6 +39,12 @@ function HomePage() {
           Guide
         </Other>
       </HomeContainerWrapper>
+      <Img
+        src={
+          logoText
+        }
+        alt="logo-text"
+      />
     </HomepageContainer>
   )
 }
