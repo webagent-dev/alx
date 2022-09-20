@@ -8,6 +8,7 @@ import { default as Modalitie } from "./pages/Modalitie"
 import { default as Thanks } from "./pages/Thanks"
 import { default as HomePage } from "./comps/home/HomePage"
 import { default as Head } from "./comps/head/Head"
+import { default as PageOne } from "./comps/page-1/PageOne"
 
 import logoText from "./asset/logo-text.png"
 import introImage from "./asset/intro.png"
@@ -28,4 +29,5 @@ export {
   bgs,
   Welcome,
   Head,
+  PageOne,
 }

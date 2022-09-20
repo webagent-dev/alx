@@ -1,6 +1,9 @@
 import React from "react"
 import { WelcomeContainer } from "../globalStyle"
-import { Head } from "../file"
+import {
+  Head,
+  PageOne,
+} from "../file"
 function Welcome() {
   return (
     <WelcomeContainer>
@@ -9,6 +12,7 @@ function Welcome() {
         header="to the ALX SE Programme"
         text=""
       />
+      <PageOne />
     </WelcomeContainer>
   )
 }
