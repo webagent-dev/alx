@@ -12,6 +12,7 @@ import {
   Modalitie,
   Thanks,
   Comm,
+  Welcome,
 } from "./file"
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       {/* <HorizontalScroll> */}
       <Home />
       <Intro />
+      <Welcome />
       <Approach />
       <Curriculum />
       <Modalitie />
