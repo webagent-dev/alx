@@ -14,6 +14,7 @@ import logoText from "./asset/logo-text.png"
 import introImage from "./asset/intro.png"
 import bgs from "./asset/bg.jpeg"
 import { default as IntroPage } from "./comps/intro-page/IntroPage"
+import { default as Table } from "./comps/table/Table"
 export {
   Home,
   Intro,
@@ -30,4 +31,5 @@ export {
   Welcome,
   Head,
   PageOne,
+  Table,
 }

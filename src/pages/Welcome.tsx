@@ -3,6 +3,7 @@ import { WelcomeContainer } from "../globalStyle"
 import {
   Head,
   PageOne,
+  Table,
 } from "../file"
 function Welcome() {
   return (
@@ -13,6 +14,7 @@ function Welcome() {
         text=""
       />
       <PageOne />
+      <Table />
     </WelcomeContainer>
   )
 }
